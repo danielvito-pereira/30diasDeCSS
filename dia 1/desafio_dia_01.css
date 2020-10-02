@@ -1,25 +1,26 @@
-* {
-    display: flex;
 
-}
-
- div.translate{
-    transform: translate(50px, 100px);/*O translate()método move um elemento de sua posição atual (de acordo com os parâmetros dados para o eixo X e o eixo Y).*/
+h1 {
+	text-align: center;
+	font-size: 1.25em;
+    font-weight: normal;
     
-  }
+}
 div.gira {
     background: red;
-    
+    padding: 10px;
 }
 
 div.gira:hover {
     transition: 2s;
     transform: rotate(180deg);/*O rotate()método gira um elemento no sentido horário ou anti-horário de acordo com um determinado grau.*/
+
 }
 
 div.rodopia {
     background-color: springgreen;
-  
+    margin: 10px;
+    padding: 10px;
+    transition: 2s;
 }
 
 div.rodopia:hover {
@@ -28,17 +29,76 @@ div.rodopia:hover {
     O exemplo a seguir aumenta o elemento <div> para duas vezes de sua largura original e três vezes de sua altura original*/
 }
 
+div.translate{
+    background: violet;
+    margin: 10px;
+    padding: 10px;
+}
 
- div.scale{
-    transform: scale(0.5, 0.5);/*O exemplo a seguir diminui o elemento <div> para a metade de sua largura e altura originais: */
+div.translate:hover{
+    transform: translate(50px, 100px);/*O translate()método move um elemento de sua posição atual (de acordo com os parâmetros dados para o eixo X e o eixo Y).*/
+    
+}
+
+di.scale{
+    padding: 10px;
+    background: tomato;
+    margin: 10px;
+}  
+
+di.scale:hover {
+    transform: scale(0.5, 0.5);/*O exemplo a seguir diminui o elemento <div> para a metade de sua largura e altura originais: */ 
+}
+
+di.scaleX {
+    padding: 10px;
+    background-color: aqua;
+    margin: 10px;
+}
+
+di.scaleX:hover {
     transform: scaleX(2);/*O scaleX()método aumenta ou diminui a largura de um elemento.*/
-    transform: scaleY(3);/*O scaleY()método aumenta ou diminui a altura de um elemento.*/
-    transform: skewX(20deg);/*O skewX()método inclina um elemento ao longo do eixo X pelo ângulo fornecido.*/
-    transform: skewY(20deg);/*O skewY()método inclina um elemento ao longo do eixo Y de acordo com o ângulo fornecido.*/
-    transform: skew(20deg, 10deg);/*O skew()método inclina um elemento ao longo dos eixos X e Y pelos ângulos fornecidos*/
+}
 
+di.scaleY {
+    padding: 10px;
+    background: goldenrod;
+    margin: 10px;
+}
+
+di.scaleY:hover {
+    transform: scaleY(3);/*O scaleY()método aumenta ou diminui a altura de um elemento.*/
+}
+
+di.skewY {
+    padding: 10px;
+    background: tomato;
+    margin: 10px;
+}
+
+di.skewX:hover {
+    transform: skewX(50deg);/*O skewX()método inclina um elemento ao longo do eixo X pelo ângulo fornecido.*/
+}
+
+div.skew {
+    padding: 10px;
+    background: rgba(red, green, blue, alpha);
+    margin: 10px;
+}
+
+div.skew:hover {
+    transform: skew(30deg, 10deg);/*O skew()método inclina um elemento ao longo dos eixos X e Y pelos ângulos fornecidos*/
+}
+
+div.matrix {
+    padding: 10px;
+    background: rgb(88, 75, 75);
+    margin: 10px;
+}
+
+div.matrix:hover {
+    background: red;
     transform: matrix(1, -0.3, 0, 1, 0, 0);/*O matrix()método combina todos os métodos de transformação 2D em um.
     O método matrix () usa seis parâmetros, contendo funções matemáticas, que permitem girar, dimensionar, mover (traduzir) e inclinar elementos.*/
+}
 
-
-  }
