@@ -1,3 +1,44 @@
-#gira {
-    background: red;
+* {
+    display: flex;
+
 }
+
+ div.translate{
+    transform: translate(50px, 100px);/*O translate()método move um elemento de sua posição atual (de acordo com os parâmetros dados para o eixo X e o eixo Y).*/
+    
+  }
+div.gira {
+    background: red;
+    
+}
+
+div.gira:hover {
+    transition: 2s;
+    transform: rotate(180deg);/*O rotate()método gira um elemento no sentido horário ou anti-horário de acordo com um determinado grau.*/
+}
+
+div.rodopia {
+    background-color: springgreen;
+  
+}
+
+div.rodopia:hover {
+    transform: scale(2, 3);/*O scale()método aumenta ou diminui o tamanho de um elemento (de acordo com os parâmetros dados para largura e altura).
+
+    O exemplo a seguir aumenta o elemento <div> para duas vezes de sua largura original e três vezes de sua altura original*/
+}
+
+
+ div.scale{
+    transform: scale(0.5, 0.5);/*O exemplo a seguir diminui o elemento <div> para a metade de sua largura e altura originais: */
+    transform: scaleX(2);/*O scaleX()método aumenta ou diminui a largura de um elemento.*/
+    transform: scaleY(3);/*O scaleY()método aumenta ou diminui a altura de um elemento.*/
+    transform: skewX(20deg);/*O skewX()método inclina um elemento ao longo do eixo X pelo ângulo fornecido.*/
+    transform: skewY(20deg);/*O skewY()método inclina um elemento ao longo do eixo Y de acordo com o ângulo fornecido.*/
+    transform: skew(20deg, 10deg);/*O skew()método inclina um elemento ao longo dos eixos X e Y pelos ângulos fornecidos*/
+
+    transform: matrix(1, -0.3, 0, 1, 0, 0);/*O matrix()método combina todos os métodos de transformação 2D em um.
+    O método matrix () usa seis parâmetros, contendo funções matemáticas, que permitem girar, dimensionar, mover (traduzir) e inclinar elementos.*/
+
+
+  }
